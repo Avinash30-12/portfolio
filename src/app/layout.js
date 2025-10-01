@@ -1,5 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./navbar";
+import styles from './navbar.module.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './globals.css'; // your global styles
+import Cursor from "./home/components/cursor/cursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,8 +24,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Add Font Awesome CDN here */}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <Cursor/>
+         <Navbar />   {/* Navbar will be visible on all pages */}
+        <main>{children}</main>
       </body>
     </html>
   );

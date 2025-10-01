@@ -1,0 +1,94 @@
+.describe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+}
+.container {
+  margin: 2rem;
+  border: 1px solid #2e2e2e;   /* border */
+  border-radius: 8px;       /* rounded corners */
+  padding: 1rem;
+  color: #fff;
+}
+.inlineCard {
+  display: flex;
+  align-items: center;       /* vertically center icon + text */
+  justify-content: center;   /* horizontally center */
+  gap: 8px;                  /* space between icon and text */
+  width: 26%;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.4rem;
+  background-color: rgba(35, 35, 35, 0.8);
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: default;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.connect{
+  background-color: #404040c2;
+  color: white;
+  border-radius: 15px;
+  width: 30%;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.connect:hover {
+  transform: scale(1.05);
+  background-color: #555555c2;
+}
+
+.cardWrapper {
+  border: 1px solid rgba(49, 49, 49, 0.8);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(22, 21, 21, 0.8);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardWrapper:hover {
+  /* transform: scale(1.03); */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.projectImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.inlineCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.inlineCard svg {
+  width: 20px;
+  height: 20px;
+}
+
+.card{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 0.8rem; 
+}
+
+.cardItem {
+  background-color: rgba(43, 42, 42, 0.8);
+  color: rgb(116, 115, 115);
+  padding: 0.8rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

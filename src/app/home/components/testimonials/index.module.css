@@ -1,0 +1,147 @@
+.container {
+  margin: 2rem;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  width: 95% !important;
+  border: 1px solid #323232;
+  padding: 1rem;
+  color: #fff;
+}
+
+.describe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* align content at the top */
+  align-items: flex-start;     /* left-align all children */
+  text-align: left;            /* left-align text */
+  padding: 2rem;
+  color: #fff;
+}
+
+.inlineCard {
+  display: flex;
+  align-items: center;   /* icon vertically aligned */
+  justify-content: flex-start; /* left align the icon + text */
+  gap: 8px;
+  width: fit-content;    /* shrink to content width */
+  background-color: rgba(35, 35, 35, 0.8);
+  color: white;
+  text-align: left;
+  margin-bottom: 1.8rem;
+  padding: 0.8rem 1rem;
+  border-radius: 45px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.cardsRow {
+  display: flex;                  /* align cards in a row */
+  justify-content: space-between; ;/* equal spacing between cards */
+  gap: 1rem;                      /* space between cards */
+  margin: 1rem 0;      
+  width: 100%;      
+  flex-wrap: nowrap;   /* responsive: wrap on smaller screens */
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  color: white;
+  text-align: center;
+  flex: 1;              /* ✅ equal width for all */
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);         /* subtle hover effect */
+}
+
+.card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.card p {
+  margin: 0;
+  color: #ccc;
+  font-size: 1rem;
+}
+.button {
+  background-color: white;
+  color: rgba(35, 35, 35, 0.8);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.button:hover {
+  background-color: rgba(126, 126, 126, 0.8);
+  color: white;
+}
+.btn {
+  background-color: rgba(35, 35, 35, 0.8);
+  color: white;
+  border-radius: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(73, 73, 73, 0.9);
+  color: cyan;
+  transform: scale(1.05);
+}
+.testimonialCard {
+  background-color: #1a1a1a;         /* dark card background */
+  padding: 2rem;                      /* spacing inside card */
+  border-radius: 1rem;                /* rounded corners */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3); /* subtle shadow */
+  color: white;
+  max-width: 600px;                   /* optional width */
+  margin: 1rem auto;                  /* center horizontally */
+  transition: transform 0.2s;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);        /* hover effect */
+}
+
+.clientCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.clientImage {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.clientInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.clientInfo h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.clientInfo p {
+  margin: 0;
+  color: gray;
+  font-size: 1rem;
+}
+
+.testimonialText p {
+  margin: 0;
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
