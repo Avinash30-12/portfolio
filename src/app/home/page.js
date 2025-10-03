@@ -7,6 +7,7 @@ import Process from "./components/process/process";
 import Services from "./components/sevices/services";
 import Index from "./components/whyToChooseme";
 import Testimonials from "./components/testimonials/testimonials";
+import Connect from "./components/connect";
 
 export default function HeroSection() {
   
@@ -19,6 +20,7 @@ export default function HeroSection() {
     <Services/>
     <Index/>
     <Testimonials/>
+    <Connect/>
     </>
   );
 }
